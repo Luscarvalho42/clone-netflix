@@ -1,0 +1,98 @@
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+
+body {
+  background-color: var(--preto);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+header {
+  margin: 30px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+@media (max-width: 550px) {
+  header .container {
+    justify-content: center;
+  }
+
+  header div img {
+    display: none;
+  }
+}
+
+.filme-principal {
+  height: 500px;
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    url("/img/love-death-robots.jpg");
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.filme-principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.filme-principal .titulo {
+  margin-top: 15%;
+  font-size: 50px;
+}
+
+.botao {
+  border-radius: 4px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 15px 30px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.botao:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.botao i {
+  margin-right: 8px;
+}
+
+.box-filme {
+  height: 100%;
+  width: auto;
+  display: block;
+}
